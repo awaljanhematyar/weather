@@ -4,6 +4,8 @@ Key-free city weather portfolio demo using Open-Meteo, with current temperature,
 
 Part of my JavaScript practice work. Explore my complete projects on [GitHub](https://github.com/awaljanhematyar) or my [developer portfolio](https://hematyar-professional-portfolio.vercel.app/).
 
+[Live demo](https://awaljanhematyar.github.io/weather/)
+
 ## Features
 
 - Search a city name and show the first matching location.
@@ -33,7 +35,7 @@ Serve the folder using VS Code Live Server and open `index.html`. There is no np
 
 ## Verification and scope
 
-Targeted mocked-fetch checks cover display fields, request URLs, units, icons, missing cities, network failure, blank searches and stale responses. Live provider availability and full browser behavior were not verified.
+Targeted mocked-fetch checks cover display fields, request URLs, units, icons, missing cities, network failure, blank searches and stale responses. A live browser smoke check displayed current Kabul weather. This is not a full browser audit.
 
 Non-commercial portfolio demonstration using Open-Meteo forecast and geocoding services. No API key is stored in the current source. Provider limits and terms apply.
 
