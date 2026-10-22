@@ -1,47 +1,38 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="card">
-      <div class="search">
-        <input type="text" placeholder="enter city name" spellcheck="false" />
-        <button><img src="images/search.png" /></button>
-      </div>
-      <div class="error">
-        <p>invalid city name</p>
-      </div>
-
-      <div class="weather">
-        <img src="images/rain.png" class="weather-icon" />
-        <h1 class="temp">22°C</h1>
-        <h2 class="city">Kabul</h2>
-        <p class="feels-like">Feels like: 20°C</p>
-        <p class="high-low">28° / 15°</p>
-        <div class="details">
-          <div class="col">
-            <img src="images/humidity.png" />
-            <div>
-              <p class="humidity">50%</p>
-              <p>humidity</p> 
-            </div>
-          </div>
-       <div class="col">
-            <img src="images/wind.png" />
-            <div>
-              <p class="wind">15k/h</p>
-              <p>wind speed</p> 
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="City weather portfolio demo with temperature, humidity and wind from Open-Meteo." />
+  <title>City Weather | JavaScript Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <div class="search">
+      <input type="text" placeholder="Enter city name" spellcheck="false" aria-label="City name" />
+      <button type="button" aria-label="Search weather"><img src="images/search.png" alt="" /></button>
+    </div>
+    <div class="error" role="status" aria-live="polite"><p></p></div>
+    <div class="weather" aria-live="polite">
+      <img src="images/rain.png" class="weather-icon" alt="Weather condition illustration" />
+      <h1 class="temp">--</h1>
+      <h2 class="city">Search for a city</h2>
+      <p class="feels-like">Feels like: --</p>
+      <p class="high-low">-- / --</p>
+      <div class="details">
+        <div class="col">
+          <img src="images/humidity.png" alt="" />
+          <div><p class="humidity">--</p><p>Humidity</p></div>
+        </div>
+        <div class="col">
+          <img src="images/wind.png" alt="" />
+          <div><p class="wind">--</p><p>Wind speed</p></div>
         </div>
       </div>
     </div>
-
-    <script src="script.js"></script>
-
-    
-  </body>
+    <p><small>Weather data by <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a>. Location data by <a href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer">GeoNames</a>. Non-commercial portfolio demo.</small></p>
+  </main>
+  <script src="script.js"></script>
+</body>
 </html>
